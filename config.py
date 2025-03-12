@@ -15,7 +15,7 @@ import dspy
 from dotenv import load_dotenv
 load_dotenv()
 
-groq_api_key = os.getenv("groq_api_key")
+groq_api_key = os.getenv("GROQ_API_KEY")
 
 lm = dspy.LM(
     "llama-3.2-1b-preview",
