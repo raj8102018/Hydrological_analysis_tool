@@ -1,9 +1,26 @@
 """This module contains the configuration for the Hydrological Analysis Tool."""
+# Using Llama.
+# from typing import Literal
+# import dspy as dspy
+
+# lm = dspy.LM(
+#     "ollama_chat/llama3.2:1b", api_base="http://localhost:11434/api/chat", api_key=""
+# )
+# dspy.configure(lm=lm)
+
+#Using Groq.
+import os
 from typing import Literal
-import dspy as dspy
+import dspy
+from dotenv import load_dotenv
+load_dotenv()
+
+groq_api_key = os.getenv("groq_api_key")
 
 lm = dspy.LM(
-    "ollama_chat/llama3.2:1b", api_base="http://localhost:11434/api/chat", api_key=""
+    "llama-3.2-1b-preview",
+    api_base="https://api.groq.com/openai/v1/",
+    api_key= groq_api_key
 )
 dspy.configure(lm=lm)
 

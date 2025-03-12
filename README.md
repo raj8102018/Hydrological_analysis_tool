@@ -20,7 +20,7 @@ Ensure you have the following installed:
 - **Python 3.8+**  
 - **Streamlit** (`pip install streamlit`)  
 - **dspy** (`pip install dspy`)  
-- **Ollama** ([Install Ollama](https://ollama.com))  
+- **Ollama** ([Install Ollama](https://ollama.com))  or **groq**
 - **Llama 3.2 model (1B parameter version)**  
 
 ### Setup  
@@ -39,7 +39,8 @@ Ensure you have the following installed:
 3. Start **Ollama** locally:  
    ```sh
    ollama run llama3.2:1b
-   ```  
+   ```
+   or instead you can set up your groq api key in the environment variables
 
 4. Run the Streamlit app:  
    ```sh

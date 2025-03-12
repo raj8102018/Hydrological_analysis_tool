@@ -3,3 +3,4 @@ my_env/
 .ipynb_checkpoints/
 __pycache__/
 summary_script.py
+.env
