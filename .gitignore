@@ -1,0 +1,5 @@
+my_env/
+*.ipynb
+.ipynb_checkpoints/
+__pycache__/
+summary_script.py
